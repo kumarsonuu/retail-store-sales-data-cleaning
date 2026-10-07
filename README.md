@@ -8,6 +8,10 @@ Cleaning a messy 12,575-row retail transactions file in Excel: profiling it, rec
 
 A retail transactions dataset (Jan 2022 to Jan 2025) with 8 product categories, 3 payment methods, and online and in-store sales. It arrived with missing item names, missing prices, and blank quantity, total and discount fields. The goal was to make it analysis-ready **without inventing data**.
 
+## Data source
+
+Dataset: [Retail Store Sales: Dirty for Data Cleaning](https://www.kaggle.com/datasets/ahmedmohamed2003/retail-store-sales-dirty-for-data-cleaning) on Kaggle (published by ahmedmohamed2003). The original CSV is included in `data/` for reference, and the `Raw_Data` sheet in the workbook is that file, unedited. Please check the license on the Kaggle page before reusing the data.
+
 ## Results
 
 | Column | Blank before | Blank after | What I did |
@@ -61,7 +65,16 @@ Filling the 604 missing quantities with an average would make the file look comp
 
 ## Screenshots
 
-![Raw vs cleaned data](images/raw-vs-cleaned.png)
+**Raw data (note the blank Item, Price Per Unit, Quantity and Total Spent cells):**
+
+![Raw data](images/raw_data.png)
+
+**Cleaned data (recovered values and imputed flags):**
+
+![Cleaned data](images/cleaned_data.png)
+
+**Issue log:**
+
 ![Issue log](images/issue-log.png)
 
 ## Skills demonstrated
@@ -73,9 +86,11 @@ Data profiling · missing-data analysis · lookup-based imputation · pivot tabl
 ```
 retail-store-sales-data-cleaning/
 ├── data/
-│   └── retail_store_sales.xlsx
+│   ├── retail_store_sales.csv      # original dataset from Kaggle
+│   └── retail_store_sales.xlsx     # cleaned workbook
 ├── images/
-│   ├── raw-vs-cleaned.png
+│   ├── raw_data.png
+│   ├── cleaned_data.png
 │   └── issue-log.png
 └── README.md
 ```
