@@ -97,4 +97,4 @@ retail-store-sales-data-cleaning/
 
 ## Author
 
-Sonu Kumar · [GitHub](https://github.com/LuciVoltX) · [LinkedIn](https://linkedin.com/in/sonu-kumar-dev1)
+Sonu Kumar · [GitHub](https://github.com/KumarSonuu) · [LinkedIn](https://linkedin.com/in/sonu-kumar-dev1)
